@@ -1,0 +1,101 @@
+package com.android.gpiointerrup;
+
+import android.util.gpiointerrup;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
+import android.util.Log;
+import android.os.FileObserver;
+import java.io.File;
+
+
+public class GPIOjninterrup extends Activity 
+{
+
+private FileObserver observer;
+String TAG = "GPIOINT";
+ToggleButton a;
+TextView textview;
+String msg;
+gpiointerrup gp;
+boolean value;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) 
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.gpiojnitest);
+
+        Log.d(TAG, "GPIOListenerService is Start");
+  	String filepath = android.os.Environment.getDataDirectory().getAbsolutePath()+"/gpiostatus.txt";
+  	Log.d(TAG, "GPIOListenerService File Path = "+filepath);
+ 	 try { 
+  		File file = new File(filepath);
+		Log.d(TAG, "step 1 : File Created Done");
+   		file.createNewFile();
+		Log.d(TAG, "step 2 : File Created Done");
+  	}catch (Exception e) {
+		Log.d(TAG, "Exception");
+  	}
+  
+  	observer = new FileObserver(filepath) {
+   
+   	@Override
+   	public void onEvent(int event, String path) {
+   		Toast.makeText(getApplicationContext(), "Event = "+event, Toast.LENGTH_SHORT).show();
+   	}
+  	};
+		
+        a=(ToggleButton)findViewById(R.id.toggle);
+        textview=(TextView)findViewById(R.id.textview);
+       	gp = new gpiointerrup();
+
+        a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() 
+	 {
+		@Override
+		public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) 
+		{
+
+		String filepath = android.os.Environment.getDataDirectory().getAbsolutePath()+"/gpiostatus.txt";
+  		Log.d("GPIOINTERRPT", "GPIOListenerService File Path = "+filepath);
+
+		// TODO Auto-generated method stub
+		if(isChecked)
+		{
+		showtoast("on");
+		msg("Connection is Interrupted");				
+		}
+		else
+		{
+		showtoast("off");
+        	msg("Connection is Not Interrupted");
+		}
+		}
+	});
+
+	value=gp.gpio_inter_in();
+	if(value)
+	{
+	a.setChecked(true);
+
+	}			
+	else
+	{
+	a.setChecked(false);
+	}
+   }
+
+   public void msg(String msg)
+   {
+	this.msg=msg;
+	textview.setText(msg);
+   }
+
+    public void showtoast(String msg)
+    {
+    	Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
+    }   
+}

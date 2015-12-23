@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#fff" android:id="@+id/hebrwKeyboardView"
+	android:layout_width="fill_parent" android:visibility="visible"
+	android:layout_height="146dip" android:layout_gravity="right|center_vertical|center_horizontal|bottom"
+	android:fitsSystemWindows="true" android:clipChildren="false"
+	 android:orientation="vertical">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="145dip"
+		android:clipChildren="false" android:layout_gravity="center_vertical|center_horizontal|bottom"
+		android:fitsSystemWindows="true" android:orientation="horizontal">
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="145dip"
+			android:clipChildren="false" android:layout_gravity="center_vertical|center_horizontal|bottom"
+			android:fitsSystemWindows="true" android:orientation="vertical">
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+				android:fitsSystemWindows="true" android:clipChildren="false"
+				android:orientation="horizontal" android:stretchColumns="true">
+				<LinearLayout android:baselineAligned="true"
+					android:layout_width="fill_parent" android:layout_gravity="center"
+					android:layout_height="fill_parent" android:fitsSystemWindows="true"
+					android:clipChildren="false" android:orientation="horizontal">
+					<Button android:id="@+id/KoofButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:text="A"
+						android:layout_gravity="center" android:fitsSystemWindows="true"
+						android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/raishButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:text="B" android:layout_gravity="center_horizontal"
+						android:fitsSystemWindows="true" android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/alephButton"
+						android:layout_gravity="center_horizontal" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:text="C"
+						android:fitsSystemWindows="true" android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/tetButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+						android:layout_height="35dip" android:text="D"
+						android:fitsSystemWindows="true" android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/vuvButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal" android:text="E"
+						android:fitsSystemWindows="true" android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/nunSophitButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal" android:text="F"
+						android:fitsSystemWindows="true" android:gravity="fill"
+						android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/memSofitButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+						android:layout_height="35dip" android:text="G"
+						android:fitsSystemWindows="true" android:ellipsize="marquee" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/payButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:text="H" android:fitsSystemWindows="true"
+						android:layout_gravity="center_horizontal" android:ellipsize="marquee" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:clipChildren="true"
+				android:layout_gravity="center_horizontal|center_vertical|center"
+				android:fitsSystemWindows="true" android:orientation="horizontal">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:clipChildren="true" android:layout_height="fill_parent"
+					android:layout_gravity="center_horizontal|center" android:gravity="bottom"
+					android:orientation="horizontal">
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:soundEffectsEnabled="true" android:id="@+id/shinButton"
+						android:layout_width="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="I"
+						android:layout_alignParentLeft="true" android:fitsSystemWindows="true" />
+					<Button android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:layout_toRightOf="@id/shinButton"
+						android:id="@+id/dalidButton" android:layout_width="wrap_content"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="J"
+						android:layout_alignWithParentIfMissing="true"
+						android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/gimleButton"
+						android:layout_toRightOf="@id/dalidButton" android:layout_width="wrap_content"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="K"
+						android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/chufButton"
+						android:layout_toRightOf="@id/gimleButton" android:layout_width="wrap_content"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="L"
+						android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/ieyinButton"
+						android:layout_toRightOf="@id/chufButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="M" android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/yudButton"
+						android:layout_toRightOf="@id/ieyinButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="N" android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/chetButton"
+						android:layout_toRightOf="@id/yudButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="O" android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/lamidButton"
+						android:layout_toRightOf="@id/chetButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="P" android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/chufSofitButton"
+						android:layout_toRightOf="@id/lamidButton" android:layout_width="wrap_content"
+						android:layout_height="35dip" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="Q" android:fitsSystemWindows="true" />
+					<Button android:layout_alignWithParentIfMissing="true"
+						android:layout_centerHorizontal="true"
+						android:soundEffectsEnabled="true" android:id="@+id/paySofitButton"
+						android:layout_toRightOf="@id/chufSofitButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="R" android:fitsSystemWindows="true" />
+				</RelativeLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+				android:fitsSystemWindows="true" android:orientation="horizontal">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center"
+					android:gravity="bottom" android:orientation="horizontal">
+					<Button android:soundEffectsEnabled="true" android:id="@+id/zionButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="S"
+						android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/samichButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="U"
+						android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/betButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="u"
+						android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/heyButton"
+						android:layout_width="wrap_content" android:layout_gravity="center_horizontal|center_vertical|center"
+						android:layout_height="35dip" android:text="w"
+						android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/nunButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="x" android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/memButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="y" android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/tzadiButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="z" android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/tuffButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="a1" android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/tzadiSofitButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="a2" android:fitsSystemWindows="true" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+				android:fitsSystemWindows="true" android:orientation="horizontal">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center"
+					android:gravity="bottom" android:orientation="horizontal">
+					<Button android:soundEffectsEnabled="true" android:id="@+id/hebrewBackButton"
+						android:layout_width="wrap_content" android:layout_height="35dip"
+						android:layout_gravity="right" android:fitsSystemWindows="true"
+						android:text="&lt;--" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/hebrewSpaceButton"
+						android:layout_width="150dip" android:layout_height="35dip"
+						android:layout_gravity="center_horizontal|center_vertical|center"
+						android:text="" android:fitsSystemWindows="true" />
+					<Button android:soundEffectsEnabled="true" android:id="@+id/hebrewDoneButton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_gravity="right" android:text="Done"
+						android:fitsSystemWindows="true" />
+				</LinearLayout>
+			</TableRow>
+		</TableLayout>
+	</TableLayout>
+</FrameLayout>

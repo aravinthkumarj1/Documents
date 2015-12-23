@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/tes" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="500dp"
+            android:textSize="25sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:maxLines="1000"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"  />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/i1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="image"
+                    android:src="@drawable/i1" />
+
+                <ImageButton
+                    android:id="@+id/i2"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="printing"
+                    android:src="@drawable/i2" />
+
+                <ImageButton
+                    android:id="@+id/i3"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="info"
+                    android:src="@drawable/i3" />
+
+               
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+          			<ImageButton
+                    android:id="@+id/i4"
+                 android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="status"
+                    android:src="@drawable/i4" />
+
+              		<ImageButton
+                    android:id="@+id/i5"
+                  android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="barcode"
+                    android:src="@drawable/i5" />
+					<ImageButton
+                    android:id="@+id/i6"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="clear"
+                    android:src="@drawable/i6" />
+               </TableRow>
+                  <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/i7"
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="barcodexnumeric"
+                    android:src="@drawable/i7" />
+
+                <ImageButton
+                    android:id="@+id/i8"
+                 android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="barcodenumeric"
+                    android:src="@drawable/i8" />
+
+                <ImageButton
+                    android:id="@+id/i9"
+                 android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="printatx"
+                    android:src="@drawable/i9" />
+                </TableRow>
+
+                       <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:id="@+id/i10"
+           android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="print"
+                    android:src="@drawable/i10" />
+
+                <ImageButton
+                    android:id="@+id/i11"
+         android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="printimage"
+                    android:src="@drawable/i11" />
+
+                <ImageButton
+                    android:id="@+id/i12"
+                android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="grayscale"
+                    android:src="@drawable/i12" />
+                
+                </TableRow>
+                   <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/i13"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="printlf"
+                    android:src="@drawable/i13" />
+
+                <ImageButton
+                    android:id="@+id/i14"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="micro"
+                    android:src="@drawable/i14" />
+
+                <ImageButton
+                    android:id="@+id/i15"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="micro"
+                    android:src="@drawable/i15" />
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
